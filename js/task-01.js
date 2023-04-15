@@ -1,9 +1,9 @@
 const categories = document.querySelectorAll('.item')
 
-console.log(`Кількість категорій: ${categories.length}`);
+console.log(`Загальна кількість категорій: ${categories.length}`);
 
 categories.forEach(items => {
-    console.log(`Категорій: ${items.firstElementChild.textContent}`)
+    console.log(`В категорії: ${items.firstElementChild.textContent}`)
     console.log(`Елементів: ${items.lastElementChild.querySelectorAll('li').length}`)
 })
 
