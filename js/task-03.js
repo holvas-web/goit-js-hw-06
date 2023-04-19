@@ -13,12 +13,12 @@ const images = [
   },
 ];
 
-const list = document.querySelector('.gallery')
-const markup = images
-	.map(image => `<li><img class="picture" src=${image.url} width = '200' alt='${image.alt}'></img></li>`)
-	.join('')
+const list = document.querySelector('.gallery');
+const markup = 
+  images.map(image => `<li><img class="images" src=${image.url} width = '200' alt='${image.alt}'></img></li>`)
+  .join('')
   list.insertAdjacentHTML('beforeend', markup)
-const pictures = document.querySelectorAll('.picture')
+const pictures = document.querySelectorAll('.images')
 
 list.style.display = 'flex';
 list.style.flexWrap = 'column-reverse';
