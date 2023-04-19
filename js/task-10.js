@@ -10,10 +10,6 @@ const btnCreate = document.querySelector('button[data-create]')
 const btnDestroy = document.querySelector('button[data-destroy]')
 const boxes = document.querySelector('#boxes')
 
-function getRandomHexColor() {
-	return `#${Math.floor(Math.random() * 16777215).toString(16)}`
-}
-
 const createBoxes = amount => {
 	const elementsToAdd = []
 	for (let i = 0; i < amount; i++) {
@@ -40,8 +36,3 @@ console.log(inputNum.value)
 btnDestroy.addEventListener('click', () => {
 	destroyBoxes.call()
 })
-
-
-// function getRandomHexColor() {
-//   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-// }
